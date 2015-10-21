@@ -1,0 +1,17 @@
+{
+  "name": "getwod",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jimmy Bernljung",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^11.2.0",
+    "http-server": "^0.8.5",
+    "reactify": "^1.1.1",
+    "watchify": "^3.4.0"
+  }
+}
