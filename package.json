@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "./node_modules/.bin/browserify -t reactify src/main.js -o www/build/main.js",
+    "watch": "./node_modules/.bin/watchify --debug -t reactify src/main.js -o www/build/main.js",
+    "host": "./node_modules/.bin/http-server www"
   },
   "author": "Jimmy Bernljung",
   "license": "ISC",
@@ -13,5 +15,9 @@
     "http-server": "^0.8.5",
     "reactify": "^1.1.1",
     "watchify": "^3.4.0"
+  },
+  "dependencies": {
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
   }
 }
